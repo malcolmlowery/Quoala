@@ -16,4 +16,4 @@ Try out this project:
 2) npm install
 3) npm run dev
 
-![Frame 1](https://user-images.githubusercontent.com/100153203/190839765-994f1ba6-fc52-4642-a818-d9af48f17589.png)
+![Frame 1](https://user-images.githubusercontent.com/100153203/190879348-bc9a4ed5-4afa-4b34-8591-1b50f931c200.png)
