@@ -16,7 +16,7 @@
    margin-top: 20px;
 }
 
-.home__products__title > h1{
+.home__products__title h1 {
    font-weight: 600;
    font-size: 1.9em;
 }
@@ -25,3 +25,28 @@
    position: relative;
    top: -100px;
 }
+
+@media only screen and (min-width: 744px) {
+   .home__products__items {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .home__products__items div:nth-child(even) {
+      position: relative;
+      top: 0px;
+   }
+   
+   .home__products__title {
+      margin: 30px 0;
+   }
+
+   .home__products__title > h1 {
+      display: inline;
+      font-weight: 600;
+      font-size: 2.3em;
+   }
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 9926px) {}

@@ -5,7 +5,7 @@
    border-radius: 32px;
    display: flex;
    flex-direction: column;
-   height: 340px;
+   height: fit-content;
    justify-content: center;
    overflow: hidden;
 }
