@@ -5,7 +5,7 @@
    border-radius: 32px;
    display: flex;
    flex-direction: column;
-   height: fit-content;
+   height: 363px;
    justify-content: center;
    overflow: hidden;
 }
@@ -19,6 +19,7 @@
 .product-item-container__body {
    padding: 20px;
    padding-bottom: 24px;
+   height: 165px;
 }
 
 .product-item-container__body > h1 {

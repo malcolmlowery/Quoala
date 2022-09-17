@@ -7,16 +7,18 @@ interface NavbarI {}
 
 const Navbar = ({}: NavbarI) => {
    return(
-      <header>
-         <nav className='navbar'>
-            <img className='navbar__left-icon' src={BackArrowIcon} />
-            <h1 className='navbar__title'>Search Product</h1>
-            <div className='navbar__right-side'>
-               <img src={ProfileImage} />
-            </div>
-         </nav>   
+      <>
+         <header className='app-header'>
+            <nav className='navbar'>
+               <img className='navbar__left-icon' src={BackArrowIcon} />
+               <h1 className='navbar__title'>Search Product</h1>
+               <div className='navbar__right-side'>
+                  <img src={ProfileImage} />
+               </div>
+            </nav>   
+         </header>
          <Outlet/>
-      </header>
+      </>
    )
 };
 
