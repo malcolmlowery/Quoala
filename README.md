@@ -3,7 +3,7 @@ An eCommerce website that shows a list of skincare products.
 
 UI Inspiration: https://dribbble.com/shots/15487383-Beauty-Product-Shop-App
 
-My Production Build Website Preview: https://6325e6f578b23e5b1a216b17--quoala.netlify.app/
+My Production Build Website Preview: https://6325fc8fd9d3bf759eb8e5ea--quoala.netlify.app/
 
 Tech stack:
 - ViteJS(Bundler)
