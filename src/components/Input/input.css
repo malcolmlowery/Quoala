@@ -18,12 +18,16 @@
    border: none;
    color: var(--primary-color);
    font-size: 0.95em;
-   font-weight: 600;
+   font-weight: 500;
    letter-spacing: 0.02rem;
 }
 
 input::placeholder {
-   color: var(--primary-color);
-   font-weight: 600;
+   color: #828282;
+   font-weight: 500;
    letter-spacing: 0.02rem;
+}
+
+input:focus {
+   outline: none;
 }

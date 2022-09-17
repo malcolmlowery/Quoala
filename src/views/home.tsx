@@ -7,7 +7,7 @@ const Home = () => {
    return(
       <div className="home">
          <section className="home__header">
-            <Input />
+            <Input width={500} />
             <Button style={{ marginLeft: 20 }} type="icon" />
          </section>
 

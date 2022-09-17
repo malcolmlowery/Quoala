@@ -47,10 +47,18 @@
    }
 }
 
+@media only screen and (min-width: 414px) {
+   .home__header {
+      justify-content: space-between;
+   }
+   
+}
+
 @media only screen and (min-width: 875px) {
    .home__products__items {
       grid-template-columns: repeat(4, 1fr);
    }
+   
 }
 
 @media only screen and (min-width: 992px) {

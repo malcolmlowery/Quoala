@@ -33,7 +33,7 @@
    width: 55px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 875px) {
    .app-header {
       padding: 20px;
       display: flex;
@@ -50,6 +50,21 @@
 
    .navbar__title {
       font-size: 1.8em;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+   .app-header {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+   }
+
+   .navbar {
+      width: 1200px;
+   }
+
+   .navbar__title {
       margin-left: 20px;
    }
 
