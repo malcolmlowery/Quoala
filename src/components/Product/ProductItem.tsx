@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './product-item.css';
 
 interface ProductI {
@@ -6,6 +7,7 @@ interface ProductI {
    productDescription: string
    productPrice: string
    productIsLoved: boolean
+   routePath: string
 };
 
 const ProductItem = ({
@@ -14,15 +16,18 @@ const ProductItem = ({
    productDescription,
    productPrice,
    productIsLoved,
+   routePath,
 }: ProductI) => {
    return(
       <div className='product-item-container'>
          <img src={image} />
-         <div className='product-item-container__body'>
-            <h1>{productName}</h1>
-            <p>{productDescription}</p>
-            <h2>${productPrice}</h2>
-         </div>
+         <Link to={routePath}>
+            <div className='product-item-container__body'>
+               <h1>{productName}</h1>
+               <p>{productDescription}</p>
+               <h2>${productPrice}</h2>
+            </div>
+         </Link>
       </div>
    )
 };

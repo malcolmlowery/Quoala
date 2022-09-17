@@ -11,15 +11,9 @@
 }
 
 .product-item-container img {
-   height: 198px;
+   min-height: 198px;
    width: 100%;
    object-fit: cover;
-}
-
-.product-item-container__body {
-   padding: 20px;
-   padding-bottom: 24px;
-   height: 165px;
 }
 
 .product-item-container__body > h1 {
@@ -36,4 +30,15 @@
 .product-item-container__body > h2 {
    font-weight: 500;
    font-size: 1.4em;
+}
+
+.product-item-container__body:hover {
+   cursor: pointer;
+}
+
+.product-item-container a {
+   text-decoration: none;
+   padding: 20px;
+   padding-bottom: 24px;
+   height: 165px;
 }
