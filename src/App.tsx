@@ -1,12 +1,20 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
+import Navbar from './components/Navbar/Navbar';
+import Home from './views/home';
 
-function App() {
+const App = () => {
+   return (
+      <div className="App">
+         <BrowserRouter>
+            <Routes>
+               <Route path='/' element={<Navbar />}>
+                  <Route path='/' element={<Home />} />
+               </Route>
+            </Routes>
+         </BrowserRouter>
+      </div>
+   )
+};
 
-  return (
-    <div className="App">
-
-    </div>
-  )
-}
-
-export default App
+export default App;

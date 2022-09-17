@@ -1,0 +1,27 @@
+.home__header {
+   display: flex;
+   justify-content: center;
+   margin: 0 20px;
+   margin-top: 160px;
+}
+
+.home__products {
+   margin: 20px;
+}
+
+.home__products__items {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+   margin-top: 20px;
+}
+
+.home__products__title > h1{
+   font-weight: 600;
+   font-size: 1.9em;
+}
+
+.home__products__items > div:nth-child(even) {
+   position: relative;
+   top: -100px;
+}

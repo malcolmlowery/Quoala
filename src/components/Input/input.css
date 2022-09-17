@@ -1,0 +1,29 @@
+.input-container {
+   align-items: center;
+   background-color: var(--accent-color);
+   border-radius: 14px;
+   display: flex;
+   flex-grow: 1;
+   padding: 16px 10px;
+}
+
+.input-container img {
+   height: 18px;
+   margin-right: 10px;
+   margin-left: 10px;
+}
+
+.input-container input {
+   background-color: transparent;
+   border: none;
+   color: var(--primary-color);
+   font-size: 0.95em;
+   font-weight: 600;
+   letter-spacing: 0.02rem;
+}
+
+input::placeholder {
+   color: var(--primary-color);
+   font-weight: 600;
+   letter-spacing: 0.02rem;
+}

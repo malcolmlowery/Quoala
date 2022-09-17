@@ -1,0 +1,34 @@
+.navbar {
+   align-items: center;
+   background-color: #ebeaef2f;
+   backdrop-filter: blur(16px);
+   box-shadow: 2px 2px 32px rgba(0, 0, 0, 0.075);
+   display: flex;
+   justify-content: space-between;
+   left: 0;
+   padding: 20px 20px;
+   padding-top: 40px;
+   position: fixed;
+   right: 0;
+   top: 0;
+   z-index: 1000;
+}
+
+.navbar__left-icon {
+   height: 26px;
+}
+
+.navbar__title {
+   font-size: 1.1em;
+   font-weight: 500;
+}
+
+.navbar__right-side {
+
+}
+
+.navbar__right-side img { 
+   border-radius: 16px;
+   height: 55px;
+   width: 55px;
+}
