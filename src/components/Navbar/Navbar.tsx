@@ -11,7 +11,7 @@ const Navbar = ({}: NavbarI) => {
 
    switch(routeLocation.pathname) {
       case '/product': {
-         navbarTitle = 'Facial Cleanser'
+         navbarTitle = ''
          break;
       }
       default: {
@@ -24,11 +24,15 @@ const Navbar = ({}: NavbarI) => {
          <header className='app-header'>
             <nav className='navbar'>
                { navbarTitle !== 'Quoala' &&
+                  <>
                   <Link to='/'>
                      <img className='navbar__left-icon' src={BackArrowIcon} />
                   </Link>
+                  </>
                }
-               <h1 className='navbar__title'>{navbarTitle}</h1>
+               { navbarTitle === 'Quoala' && 
+                  <h1 className='navbar__title'>Quoala</h1>
+               }
                <div className='navbar__right-side'>
                   <img src={ProfileImage} />
                </div>

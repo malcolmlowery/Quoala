@@ -1,6 +1,6 @@
 .app-header {
    background-color: #ebeaef2f;
-   backdrop-filter: blur(16px);
+   backdrop-filter: blur(32px);
    box-shadow: 2px 2px 32px rgba(0, 0, 0, 0.075);
    left: 0;
    padding: 20px;
@@ -8,7 +8,7 @@
    position: fixed;
    right: 0;
    top: 0;
-   -webkit-backdrop-filter: blur(16px);
+   -webkit-backdrop-filter: blur(32px);
    z-index: 1000;
    transition: 0.5s ease;
 }
