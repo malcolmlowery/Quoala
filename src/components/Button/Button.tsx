@@ -7,7 +7,7 @@ interface ButtonI {
    type?: 'icon' | 'text' | 'icon-with-text'
    text?: string
    textColor?: string
-   children: React.ReactNode
+   children?: React.ReactNode
 }
 
 const Button = ({ children, style, text, type, textColor }: ButtonI) => {

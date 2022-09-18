@@ -7,32 +7,19 @@ interface NavbarI {}
 
 const Navbar = ({}: NavbarI) => {
    const routeLocation: any = useLocation();
-   let navbarTitle = '';
-
-   switch(routeLocation.pathname) {
-      case '/product': {
-         navbarTitle = ''
-         break;
-      }
-      default: {
-         navbarTitle = 'Quoala'
-      }
-   }
 
    return(
       <>
          <header className='app-header'>
             <nav className='navbar'>
-               { navbarTitle !== 'Quoala' &&
+               { routeLocation.pathname !== '/' &&
                   <>
-                  <Link to='/'>
-                     <img className='navbar__left-icon' src={BackArrowIcon} />
-                  </Link>
+                     <Link to='/'>
+                        <img className='navbar__left-icon' src={BackArrowIcon} />
+                     </Link>
                   </>
                }
-               { navbarTitle === 'Quoala' && 
-                  <h1 className='navbar__title'>Quoala</h1>
-               }
+               <h1 className='navbar__title'>Quoala</h1>
                <div className='navbar__right-side'>
                   <img src={ProfileImage} />
                </div>

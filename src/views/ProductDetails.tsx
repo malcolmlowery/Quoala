@@ -8,9 +8,8 @@ import Button from '../components/Button/Button';
 const ProductDetails = () => {
    return(
       <div className='product-details'>
-         <div className='product-details__image-container'>
-            <img src='https://cdn.shopify.com/s/files/1/0508/2611/7313/products/Untitleddesign-6_600x.png?v=1626381081' />
-         </div>
+         <img className='product-details__background-blur' />
+         <img className='product-details__image-container' src='https://cdn.shopify.com/s/files/1/0508/2611/7313/products/Untitleddesign-15_5000x.png?v=1626381962' />
 
          <div className='product-details__ingredients'>
             <div className='product-details__ingredients__card'>

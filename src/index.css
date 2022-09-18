@@ -2,3 +2,7 @@
    color: #07060A;
    margin: 0;
 }
+
+body {
+   /* overflow-x: hidden; */
+}
