@@ -4,7 +4,7 @@
    border-radius: 14px;
    display: flex;
    flex-grow: 1;
-   padding: 16px 10px;
+   padding: 0 10px;
 }
 
 .input-container img {
@@ -15,6 +15,9 @@
 
 .input-container input {
    background-color: transparent;
+   padding: 16px 10px;
+   padding-left: 2px;
+   flex: 1;
    border: none;
    color: var(--primary-color);
    font-size: 0.95em;

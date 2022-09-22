@@ -2,6 +2,7 @@ button {
    background-color: var(--white);
    border: none;
    border-radius: 16px;
+   cursor: pointer;
    padding: 12px;
 }
 

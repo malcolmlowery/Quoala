@@ -19,7 +19,9 @@ const Navbar = ({}: NavbarI) => {
                      </Link>
                   </>
                }
-               <h1 className='navbar__title'>Quoala</h1>
+               <Link className='navbar__title' to='/'>
+                  <h1>Quoala</h1>
+               </Link>
                <div className='navbar__right-side'>
                   <img src={ProfileImage} />
                </div>
