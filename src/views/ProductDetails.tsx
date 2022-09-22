@@ -4,12 +4,21 @@ import LeafIcon01 from '../assets/icons/leaf-icon-01.png';
 import LeafIcon02 from '../assets/icons/leaf-icon-02.png';
 import EarthIcon01 from '../assets/icons/earth-icon-01.png';
 import Button from '../components/Button/Button';
+import { useLocation } from 'react-router-dom';
 
 const ProductDetails = () => {
+   const { state } = useLocation();
+   const {
+      image,
+      productName,
+      productDescription,
+      productPrice,
+   } = state;
+
    return(
       <div className='product-details'>
-         <img className='product-details__background-blur' />
-         <img className='product-details__image-container' src='https://cdn.shopify.com/s/files/1/0508/2611/7313/products/Untitleddesign-15_5000x.png?v=1626381962' />
+         <img className='product-details__background-blur' src={image} />
+         <img className='product-details__image-container' src={image} />
 
          <div className='product-details__ingredients'>
             <div className='product-details__ingredients__card'>
@@ -29,7 +38,7 @@ const ProductDetails = () => {
          <div className='product-details__card'>
             <div className='product-details__card__top'>
                <div className='product-details__card__top__title'>
-                  <h1>Facial Cleanser</h1>
+                  <h1>{productName}</h1>
                   <div className='product-details__card__top__rank__stars'>
                      <img src={StarGrayIcon} />
                      <img src={StarGrayIcon} />

@@ -5,9 +5,10 @@ interface ProductI {
    image: string | undefined
    productName: string
    productDescription: string
-   productPrice: string
+   productPrice: string | number
    productIsLoved: boolean
    routePath: string
+   routeState: any
 };
 
 const ProductItem = ({
@@ -17,11 +18,12 @@ const ProductItem = ({
    productPrice,
    productIsLoved,
    routePath,
+   routeState
 }: ProductI) => {
    return(
       <div className='product-item-container'>
          <img src={image} />
-         <Link to={routePath}>
+         <Link to={routePath} state={routeState}>
             <div className='product-item-container__body'>
                <h1>{productName}</h1>
                <p>{productDescription}</p>

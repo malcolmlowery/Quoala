@@ -1,10 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from "../components/Button/Button";
 import Input from "../components/Input/Input";
 import ProductItem from "../components/Product/ProductItem";
+import productsData from '../services/product-data.json';
 import './home.css';
 
 const Home = () => {
+   const navigate = useNavigate();
+   
    return(
       <div className="home">
          <section className="home__header">
@@ -18,46 +21,27 @@ const Home = () => {
                <h1>10 Results</h1>
             </div>
             <div className="home__products__items">
-               <ProductItem 
-                  image='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/glossier-milkyjelly-1512575988.jpg'
-                  productName='Facial Cleanser'
-                  productDescription='Citrus refreshes senses'
-                  productPrice='14.99'
-                  productIsLoved={false}
-                  routePath='/product'
-               />
-               <ProductItem 
-                  image='https://media1.popsugar-assets.com/files/thumbor/ysqOFGx4Now5ni3J3OTQoSEKfWc/0x61:1600x1661/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/09/01/002/n/1922153/edfadd405f4ed348df0cc9.90548788_/i/best-skincare-products-september-2020.jpg'
-                  productName='Splash Mountain'
-                  productDescription='Exfoliating Scrubs'
-                  productPrice='24.89'
-                  productIsLoved={false}
-                  routePath='/product'
-               />
-               <ProductItem 
-                  image='https://cdn.shopify.com/s/files/1/0508/2611/7313/products/Untitleddesign-6_600x.png?v=1626381081'
-                  productName='Classic Cleanser'
-                  productDescription='Grapefruit Cane'
-                  productPrice='19.99'
-                  productIsLoved={false}
-                  routePath='/product'
-               />
-               <ProductItem 
-                  image='https://assets.teenvogue.com/photos/5d14a4994b98130009ffd31e/master/w_1586,h_1983,c_limit/teen-vogue-acne-awards-2019-035.jpg'
-                  productName='Differin Oil'
-                  productDescription='Absorbing Moisturizer with SPF'
-                  productPrice='32.99'
-                  productIsLoved={false}
-                  routePath='/product'
-               />
-               <ProductItem 
-                  image='https://cdn.shopify.com/s/files/1/0508/2611/7313/products/Untitleddesign-15_5000x.png?v=1626381962'
-                  productName='Miracle Mask'
-                  productDescription='Natural Peel Mask'
-                  productPrice='24.99'
-                  productIsLoved={false}
-                  routePath='/product'
-               />
+              {productsData.products.map(product => {
+               console.log(product.productDescription)
+               return(
+                  <ProductItem 
+                     key={product.id}
+                     image={product.image}
+                     productName={product.productName}
+                     productDescription={product.productDescription}
+                     productPrice={product.productPrice}
+                     productIsLoved={false}
+                     routePath={'/product'}
+                     routeState={{
+                        image: product.image,
+                        productName: product.productName,
+                        productDescription: product.productDescription,
+                        productPrice: product.productPrice,
+
+                     }}
+                  />
+               )
+              })}
             </div>
          </section>
       </div>
